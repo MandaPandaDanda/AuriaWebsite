@@ -1,0 +1,208 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #70587C;
+  color: #0F0E0F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ------ FOR NAVBAR ------ */
+
+nav {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #331D3D;
+  border: 1px solid #FFFEF9;
+  box-shadow: -4px -4px #331D3D, 4px 4px #331D3D, -4px 4px #331D3D, 4px -4px #331D3D;
+  width: 70%;
+  text-align: center;
+  font-variant-caps: small-caps;
+}
+
+nav a {
+  display: inline-block;
+  color: #FFFEF9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 2px;
+  margin: 0px 10px;
+  font-size: x-large;
+  position: relative;
+  vertical-align: middle;
+}
+
+nav a:not(#n_home):after { /* the animated line */
+  content: "";
+  position: absolute;
+  background-color: #C8B8D8;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+nav a:not(#n_home):hover:after { /* makes the line appear on hover */
+  width: 100%;
+}
+
+#n_home {
+  font-size: 1.8em; 
+  transition: 0.3s;
+}
+
+#n_home:hover {
+  color: #C8B8D8;
+}
+
+/* ------ BASIC PAGE CODE ------ */
+
+.content {
+  width: 80%;
+  margin: 20px auto; 
+  padding: 10px;
+  background-color: #e4dfea;
+  border: 2px solid #331D3D;
+  box-shadow: -4px -4px #e4dfea, 4px 4px #e4dfea, -4px 4px #e4dfea, 4px -4px #e4dfea;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-variant-caps: small-caps;
+  font-size: xxx-large;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  font-variant-caps: small-caps;
+  font-size: xx-large;
+}
+
+p {
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 80em;
+  font-size: large;
+  line-height: 1.5;
+  color: #2d222c;
+}
+
+img {
+  width: 65%;
+  height: auto;
+}
+
+.p_img { /* images are wrapped in this to center them */
+  text-align: center;
+}
+
+/* ------ FOR CHARACTERS PAGE ------ */ 
+
+.ch_container { 
+  text-align: center;
+}
+
+.ch_char { 
+  display: inline-block;
+  position: relative;
+  margin: 1.5vh 1.5vw;
+  width: 20%;
+  height: 20%;
+}
+
+.ch_char img {
+  border-radius: 1000px;
+  border: 4px double #70587C;
+  height: 100%;
+  width: 100%;
+}
+
+.ch_char a { transition: 0.3s; }
+.ch_char a:hover { opacity: 0.8; }
+
+.ch_caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-variant-caps: small-caps;
+  margin: -10px 0 10px;
+}
+
+/* ------ FOR SPECIFIC CHARACTER PAGES ------ */
+
+.ch_p_top { display: flex; }
+
+.ch_p_img {
+  flex: 32%;
+  margin: 10px;
+}
+
+.ch_p_img img {
+  border: 4px double #70587C;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px;
+  font-variant-caps: small-caps;
+  font-size: x-large;
+}
+
+.ch_p_info {
+  flex: 68%;
+  margin: 0px 20px;
+  vertical-align: top;
+}
+
+.ch_p_info h3 { text-align: left; margin: 0; }
+
+ul {
+  list-style-type: disclosure-closed;
+  padding: 14px;
+  margin: 0px 10px;
+  font-size: large;
+  line-height: 1.5;
+  color: #2d222c;
+}
+
+ul li {
+  padding: 1px;  
+}
+
+/* ------ FOR KINGDOM PAGE ------ */
+
+.k_kingdom {
+  margin: 20px auto;
+  width: 96%;
+  background-color: pink;
+  display: flex;
+}
+
+.k_emblem {
+  flex: 30%;
+  background-color: red;
+}
+
+.k_text {
+  flex: 70%;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.k_kingdom .k_text h3 {
+  text-align: left;
+  margin: 10px 0;
+}
+
+
+/* ------ FOR SPECIFIC KINGDOM PAGES ------ */
+
